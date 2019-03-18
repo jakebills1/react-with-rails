@@ -14,8 +14,8 @@ class Api::ItemsController < ApplicationController
   end
 
   def update
-    @item.update(complete: !item.complete)
-    render json: item
+    @item.update(complete: !@item.complete)
+    render json: @item
   end
 
   def destroy
